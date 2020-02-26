@@ -11,15 +11,20 @@ import {
   StyleSheet,
   View,
   Text,
+  StatusBar,
 } from 'react-native';
 
-import Welcomepage from './app/components/Welcomepage';
+import Routes from './app/Routes';
 
 export default class App extends React.Component {
   render() {
     return(
         <View style={styles.container}>
-            <Welcomepage/>
+            <StatusBar
+                backgroundColor = "#1565C0" 
+                barStyle="light-content"
+            />
+            <Routes/>
         </View>
     );
   }
@@ -28,10 +33,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: '#1565C0',
       justifyContent: 'center',
-      alignItems: 'center',
-      paddingLeft: 20,
-      paddingRight: 20,
-      backgroundColor: '#fefefe',
     }
 });

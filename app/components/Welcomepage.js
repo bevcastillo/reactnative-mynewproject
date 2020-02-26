@@ -6,12 +6,17 @@ import {
     TextInput,
     TouchableOpacity,
     Image,
+    StatusBar,
  } from 'react-native';
 
  export default class Welcomepage extends React.Component {
      render() {
          return(
              <View style = {styles.welcomeform}>
+                 <StatusBar
+                    backgroundColor="blue"
+                    barStyle="light-content"
+                 />
                 <Text style = {styles.header}>Welcome to Bolt</Text>
                 <Text style = {styles.subHeader}>Explore Us</Text>
                 <Image
@@ -52,8 +57,6 @@ import {
         padding: 15,
         backgroundColor: '#7990DD',
         marginTop: 50,
-        marginLeft: 20,
-        marginRight: 20,
         borderRadius: 10,
         shadowColor: 'rgba(0,0,0, .4)',
         shadowOffset: {height: 1, width: 1},
